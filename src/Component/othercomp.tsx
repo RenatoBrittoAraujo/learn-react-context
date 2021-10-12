@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { PessoaContext } from "./context";
+import { usePessoas } from "./context";
 
 const OtherComp = () => {
-  const pessoas = useContext(PessoaContext);
+  const pessoas = usePessoas();
 
   return (
     <div>

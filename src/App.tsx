@@ -1,12 +1,15 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Comp from "./Component/context";
+import Comp from "./Component/comp";
+import PessoasProvider from "./Component/context";
 
 function App() {
   return (
     <div className="App">
-      <Comp />
+      <PessoasProvider>
+        <Comp />
+      </PessoasProvider>
     </div>
   );
 }
